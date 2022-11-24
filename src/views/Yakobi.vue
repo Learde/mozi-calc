@@ -23,6 +23,7 @@ const reset = () => {
 const fullReset = () => {
   showSolve.value = false;
 }
+
 </script>
 
 <template>

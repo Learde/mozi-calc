@@ -5,11 +5,26 @@ defineProps({
   a: Number,
   n: Number,
 })
+
+function NOD () {
+  for (var x = arguments[0], i = 1; i < arguments.length; i++) {
+    var y = arguments[i];
+    while (x && y) {
+      x > y ? x %= y : y %= x;
+    }
+    x += y;
+  }
+  return x;
+}
 </script>
 
 <template>
+  <!--  0 случай-->
+  <template v-if="NOD(a,n) !== 1">
+    0
+  </template>
   <!--  1 случай-->
-  <template v-if="a < 1">
+  <template v-else-if="a < 1">
     (-1)
     <span class="pow">
       {{ (n-1) / 2 }}
