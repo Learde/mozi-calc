@@ -1,8 +1,8 @@
 <script setup>
 import {computed, ref} from "vue";
 
-const textParam = ref(33);
-const textMod = ref(64);
+const textParam = ref(null);
+const textMod = ref(null);
 const param = computed(() => Number(textParam.value));
 const mod = computed(() => Number(textMod.value));
 const keys = [1,3,5,7];

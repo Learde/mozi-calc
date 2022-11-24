@@ -10,6 +10,12 @@ import { RouterLink } from 'vue-router'
     <RouterLink to="quadratic2" class="calc-list__elem">
       <div>Квадратное уравнение (p = 2)</div>
     </RouterLink>
+    <RouterLink to="protoplastic" class="calc-list__elem">
+      <div>Первообразные корни</div>
+    </RouterLink>
+    <RouterLink to="yakobi" class="calc-list__elem">
+      <div>Якоби</div>
+    </RouterLink>
   </div>
 </template>
 
@@ -18,6 +24,7 @@ import { RouterLink } from 'vue-router'
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+  row-gap: 20px;
   grid-auto-rows: 200px;
 
   &__elem {
